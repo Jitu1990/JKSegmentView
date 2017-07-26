@@ -23,11 +23,11 @@ class JKSegmentView: UIView {
     // An empty implementation adversely affects performance during animation.
      */
     
-    @IBInspectable var segmentTitleColor:UIColor?
-    @IBInspectable var segmentSelectedTitleColor:UIColor?
-    @IBInspectable var segmentBackgroundColor:UIColor?
-    @IBInspectable var segmentSelectedBackgroundColor:UIColor?
-    @IBInspectable var borderTintColor:UIColor?
+    @IBInspectable var titleColor:UIColor?
+    @IBInspectable var highlightedTitleColor:UIColor?
+    @IBInspectable var segmentBackground:UIColor?
+    @IBInspectable var segmentSelected:UIColor?
+    @IBInspectable var borderColor:UIColor?
     @IBInspectable var indicatorColor:UIColor?
     
     @IBInspectable var selectedIndex:Int = 0
@@ -64,8 +64,8 @@ class JKSegmentView: UIView {
                let btn = UIButton(frame: CGRect(x: width * CGFloat(i), y: 0, width: width, height: self.frame.size.height))
                
                btn.setTitle(segments[i], for: .normal)
-               btn.setTitleColor(segmentTitleColor, for: .normal)
-               btn.backgroundColor = segmentBackgroundColor
+               btn.setTitleColor(titleColor, for: .normal)
+               btn.backgroundColor = segmentBackground
                btn.tag = BASETAG_VALUE + i
                btn.addTarget(self, action: #selector(segmentSelected(sender:)), for: .touchUpInside)
                self.addSubview(btn)
@@ -95,7 +95,7 @@ class JKSegmentView: UIView {
         frame.size.height = 1
         borderView.frame = frame
 //        borderView.frame = CGRect(x: 0, y: self.frame.origin.y + self.frame.size.height-1, width:self.frame.origin.x + self.frame.size.width, height: 1)
-        borderView.backgroundColor = borderTintColor
+        borderView.backgroundColor = borderColor
         
         self.addSubview(borderView)
 
@@ -138,14 +138,14 @@ class JKSegmentView: UIView {
             previousSelectedSegmentTag = currentSelectedSegmentTag
             currentSelectedSegmentTag = tagvalue
             
-            segView.backgroundColor = segmentSelectedBackgroundColor
-            segView.setTitleColor(segmentSelectedTitleColor, for: .normal)
+            segView.backgroundColor = segmentSelected
+            segView.setTitleColor(highlightedTitleColor, for: .normal)
             updateIndicatorViewFor(segment: segView)
 
             //get the prevoius selected segment and set default appearance
             if let lastSelectedSegView = self.viewWithTag(previousSelectedSegmentTag)as? UIButton{
-                lastSelectedSegView.backgroundColor = segmentBackgroundColor
-                lastSelectedSegView.setTitleColor(segmentTitleColor, for: .normal)
+                lastSelectedSegView.backgroundColor = segmentBackground
+                lastSelectedSegView.setTitleColor(titleColor, for: .normal)
             }
             
         }
