@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JKSegmentView/JKSegmentView.swift"
+            timestampString = "522754424.902832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "setSegmentSelectedFor(tag:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKSegmentView.JKSegmentView.setSegmentSelectedFor (tag : Swift.Int) -&gt; ()"
+                  moduleName = "JKSegmentView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jitendrasolanki/Desktop/Workspace/swift_ios_project/JKSegmentView/JKSegmentView/JKSegmentView.swift"
+                  timestampString = "522754241.861615"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JKSegmentView.JKSegmentView.setSegmentSelectedFor (tag : Swift.Int) -&gt; ()"
+                  moduleName = "JKSegmentView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jitendrasolanki/Desktop/Workspace/swift_ios_project/JKSegmentView/JKSegmentView/JKSegmentView.swift"
+                  timestampString = "522754241.864983"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "251">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
